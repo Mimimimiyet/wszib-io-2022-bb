@@ -1,4 +1,4 @@
-# Rozpoznawanie typu trójkąta
+# Rozpoznawanie typu Trójkąta
 Prototyp - nie zaleca się używać na produkcji.
 
 ## Kompilowanie
