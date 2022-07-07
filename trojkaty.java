@@ -1,5 +1,5 @@
 /**
-* To jest program do rozpoznawania trójkąta.
+* To jest program do rozpoznawania i analizy trójkąta, znowu
 */
 
 class Trojkaty {
@@ -17,6 +17,12 @@ class Trojkaty {
                    return false;
                }
     public static void jakiTrojkat(float a, float b, float c){
+    int jednakoweDlugosci = ileJednakowych(a, b, c); // tutaj zliczamy ile jest jednakowych bokow
+                   if (jednakoweDlugosci > 1) {
+                       System.out.println("Trójkąt równoboczny");
+                   } else if (jednakoweDlugosci > 0) {
+                       System.out.println("Trójkąt równoramienny");
+                   }
          if (a == b && b == c) {
              System.out.println("Trójkąt równoboczny"); 
          }
@@ -32,6 +38,17 @@ class Trojkaty {
 
          // TODO: tutaj trzeba bedzie dopisac inne przypadki
     }
+
+     public static int ileJednakowych(float a, float b, float c){
+                   int jednakowe = 0; // tutaj zliczamy ile jest jednakowych bokow
+                   if (a == b) {
+                      jednakowe++;
+                   }
+                   if (b == c) {
+                      jednakowe++;
+                   }
+                   return jednakowe;
+               }
     /** Wyświetla ekran pomocy */
     public static void pomoc(){
         System.out.println("Acme INC. (C) 2022");
@@ -52,6 +69,7 @@ class Trojkaty {
                     System.out.println("Długości boków trójkąta muszą być nieujemne!");
                     System.exit(2);
                 }
+
 
         jakiTrojkat(a, b, c);
     }
