@@ -1,5 +1,5 @@
 /**
-* To jest program do rozpoznawania i analizy trójkąta
+* To jest program do rozpoznawania i analizy trójkąta, znowu
 */
 
 class Trojkaty {
