@@ -1,10 +1,11 @@
 /**
+* To jest program do rozpoznawania i analizy trójkąta
 * To jest program do rozpoznawania i analizy trójkąta, znowu
 */
 
 class Trojkaty {
     /**
-     * Główna funkcja programu poniżej.
+     * Główna funkcja programu.
      * @param {float} a - Długość pierwszego boku.
      * @param {float} b - Długość drugiego boku.
      * @param {float} c - Długość trzeciego boku.
@@ -25,10 +26,8 @@ class Trojkaty {
                 if (a == b || b == c || a == c) {
                     System.out.println("Trójkąt równoramienny");
                 }
-
          // TODO: tutaj trzeba bedzie dopisac inne przypadki
     }
-
      public static int ileJednakowych(float a, float b, float c){
                    int jednakowe = 0; // tutaj zliczamy ile jest jednakowych bokow
                    if (a == b) {
@@ -59,8 +58,6 @@ class Trojkaty {
                     System.out.println("Długości boków trójkąta muszą być nieujemne!");
                     System.exit(2);
                 }
-
-
         jakiTrojkat(a, b, c);
     }
 }
